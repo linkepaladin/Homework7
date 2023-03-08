@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1() {
         int salary = 15000;
@@ -35,6 +36,17 @@ public class Main {
             year++;
             people = people + (life - death);
             System.out.println("Год " + year + " численность населения составляет " + people);
+        }
+    }
+    public static void task4() {
+        int salary = 15000;
+        int total = 0;
+        int month = 0;
+        while (total <= 12_000_000) {
+            total = total + (total * 7 / 100);
+            total = total + salary;
+            month++;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + total);
         }
     }
 }
