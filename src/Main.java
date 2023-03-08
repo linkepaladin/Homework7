@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1() {
         int salary = 15000;
@@ -78,6 +79,18 @@ public class Main {
             }
             if (month % 12 == 0) {
                 year++;
+            }
+        }
+    }
+    public static void task7() {
+        int date = 7;
+        int day = 1;
+        while (day < 31) {
+            System.out.println("Сегодня пятница " + date + " число. Необходимо подготовить отчёт.");
+            date = date + 7;
+            day++;
+            if(date > 31) {
+                break;
             }
         }
     }
