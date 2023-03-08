@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1() {
         int salary = 15000;
@@ -60,6 +61,23 @@ public class Main {
             month++;
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + " сумма накоплений равна " + total);
+            }
+        }
+    }
+    public static void task6() {
+        int salary = 15000;
+        int total = 0;
+        int month = 0;
+        int year = 1;
+        while (year < 10) {
+            total = total + (total * 7 / 100);
+            total = total + salary;
+            month++;
+            if (month % 6 == 0) {
+                    System.out.println("Год " + year + " Месяц " + month + " сумма накоплений равна " + total);
+            }
+            if (month % 12 == 0) {
+                year++;
             }
         }
     }
